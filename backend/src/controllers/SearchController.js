@@ -7,8 +7,6 @@ module.exports = {
 
         const arrTechs = parseStringAsArray(techs)
 
-        console.log(arrTechs)
-
         const devs = await Dev.find({
             techs: {
                 $in: arrTechs
